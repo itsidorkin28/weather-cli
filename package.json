@@ -1,11 +1,14 @@
 {
-  "name": "weather-cli",
+  "name": "weather-cli-sid",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "./weather.js"
+  },
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,10 +20,15 @@
   "homepage": "https://itsidorkin.ru",
   "repository": {
     "type": "git",
-    "url": "https://itsidorkin.ru"
+    "url": "https://github.com/itsidorkin28/weather-cli"
   },
   "bugs": {
     "url": "https://itsidorkin.ru",
     "email": "itsidorkin28@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
   }
 }
